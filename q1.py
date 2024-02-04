@@ -1,1 +1,2 @@
-asdf
+def func(asdfad):
+    
