@@ -9,16 +9,16 @@ def MinMax(arr):
     n = len(arr) - 1
     count = 0
     while i <= n:
+        count +=1
         if arr[i] < arr[m]:
             m = i
-            count += 1
+        count += 1
         if arr[i] > arr[M]:
             M = i
-            count +=1
+            
         i = i + 1
     return (m+1, M+1, count)   #indexed at 1 for some reason
 
-arr = [3, 5, 7 ,3 ,41, 33]
 
 
 
@@ -35,8 +35,6 @@ for list in lists:
         numba = random.randint(1,100)
         lists[list].append(numba)
     i += 2
-
-print(MinMax(arr))
 
 for list in lists:
     arr = lists[list]
