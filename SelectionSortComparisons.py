@@ -11,6 +11,6 @@ def SelectionSort(arr):
                 arr[i], arr[m] = arr[m], arr[i]
     return count
 
-array = [12,3,1,24,6,8]
+array = [12,3,1,24,6,8,5]
 
-print("length array " + str(len(array)) + " count of comparisons " +  str(SelectionSort(array)))
+print("length: " + str(len(array)) + " count of comparisons " +  str(SelectionSort(array)))

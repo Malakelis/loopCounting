@@ -36,6 +36,11 @@ for list in lists:
         lists[list].append(numba)
     i += 2
 
-for list in lists:
-    arr = lists[list]
-    print("Min, Max, Count for length " + str(len(arr)) + " " + str(MinMax(arr)))
+
+def ListCheck():
+    for list in lists:
+        arr = lists[list]
+        print("Min, Max, Count for length " + str(len(arr)) + " " + str(MinMax(arr)))
+
+arr = [56, 66, 18, 5, 28, 65, 11, 14 ,60, 51, 40, 55, 27, 46, 57, 31]
+print("length: " + str(len(arr)) + " min, max, count " + str(MinMax(arr)))
