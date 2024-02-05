@@ -18,12 +18,12 @@ def formulaA(n):
 def b(n):
     count = 0
     for i in range(0, n):   # i: 0 to n-1
-        for j in range(0, 2*i):
+        for j in range(0, 2*i+1):
             count += 1
     return count
 
 def formulaB(n):
-    return n*(n-1)
+    return n*n
 
 
 def c(n):
