@@ -38,11 +38,9 @@ def c(n):
 def formulaC(n):
     return n*(n-1)*(n-2)
 
-n = 10
-
 testCases = set()
 
-for i in range(1,50):
+for i in range(1,100):
     testCases.add(i)
 
 
@@ -68,5 +66,5 @@ def conclusiveCheck():
         print("Passed testcases")
     else:
         print("failed")
-        
+
 conclusiveCheck()
