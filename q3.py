@@ -12,15 +12,15 @@ def stackSort(numba):
 
     while rightSide:
         if len(stack) == 0 or rightSide[-1] < stack[-1]:
-            count += 2
+            count += 1
             stack.append(rightSide.pop())
         else:
             if rightSide[-1] > stack[-1]:
-                count += 2
+                count += 1
                 leftSide.append(stack.pop())
     
     while stack:
-        count += 2
+        count += 1
         leftSide.append(stack.pop())
 
     
